@@ -13,7 +13,7 @@ interface ItemDao {
     fun getItems(): Flow<List<Item>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(item: Item)
+    suspend fun insert(item: com.example.inventory.InventoryViewModel.Item)
 
     @Update
     suspend fun update(item: Item)
