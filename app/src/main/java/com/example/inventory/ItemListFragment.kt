@@ -29,7 +29,6 @@ import com.example.inventory.databinding.ItemListFragmentBinding
  * Main fragment displaying details for all items in the database.
  */
 class ItemListFragment : Fragment() {
-
     private var _binding: ItemListFragmentBinding? = null
     private val binding get() = _binding!!
 
@@ -37,7 +36,7 @@ class ItemListFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = ItemListFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
